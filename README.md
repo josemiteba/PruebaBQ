@@ -10,10 +10,12 @@ Además para tener permisos de desarrollo deberemos crear una cuenta en https://
 Una vez hecho esto empezamos a configurar la aplicación:
 
 - En el fichero build.gradle debemos añadir una dependencia de compilación:
-    dependencies {
+    
+dependencies {
     compile 'com.evernote:android-sdk:2.0.0-RC3'
     }
 - También necesitamos añadir lo siguiente en el AndroidManifest.xml para que la aplicación funciones correctamente:
+
     <activity android:name="com.evernote.client.android.EvernoteOAuthActivity" />
     <activity android:name="com.evernote.client.android.login.EvernoteLoginActivity"/>
 
